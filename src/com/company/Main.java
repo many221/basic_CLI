@@ -23,7 +23,7 @@ public static Scanner input = new Scanner ( System.in );
     while (check){
         System.out.println ( "Please Choose an option below" );
         System.out.println (
-                "1) Say Hello\n" +
+                        "1) Say Hello\n" +
                         "2) Reverse a string\n" +
                         "3) Add two numbers\n" +
                         "4) Exit the program" );
@@ -32,10 +32,9 @@ public static Scanner input = new Scanner ( System.in );
         byte option = input.nextByte ();
 
         switch (option) {
-            case 1 -> {
-                Hello.helloUSer ();
-            }
-            case 2, 3 -> System.out.println ( "Program still in development" );
+            case 1 -> Option1.helloUSer ();
+            case 2 -> Option2.rev ();
+            case 3 -> Option3.addTwo ();
             case 4 -> {
                 check = false;
                 System.out.println ( "Bye-Bye! See You Soon" );

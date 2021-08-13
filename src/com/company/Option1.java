@@ -1,6 +1,6 @@
 package com.company;
 
-public class Hello {
+public class Option1 {
 
     public static void helloUSer(){
         System.out.print ("Please Enter Your Name: ");
